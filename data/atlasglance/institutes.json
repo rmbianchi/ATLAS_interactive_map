@@ -1,0 +1,18 @@
+var atlas_institues = [
+{
+	"institutes": {
+		"LAL" : {
+			"name": "LAL",
+			"city": "Orsay",
+			"country": "France",
+			"members": 20
+		},
+		"Roma Tre": {
+			"name": "Roma Tre",
+			"city": "Roma",
+			"country": "Italy",
+			"members": 30
+		}
+	}
+}
+]

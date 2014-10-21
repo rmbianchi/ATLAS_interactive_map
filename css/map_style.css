@@ -1,0 +1,760 @@
+/*
+
+Interactive ATLAS Collaboration world map 
+
+STYLE FILE
+
+Author:        Riccardo Maria BIANCHI <rbianchi-at-cern.ch>
+First version: 15 Apr 2014
+Update:        02 Oct 2014
+
+v.6
+
+*/
+
+
+/* main container divs */
+#div-maincontainer {
+	height: 600px;
+	width: 100%;
+}
+#div-a-left-map {
+ float:left;
+ width: 90%;
+ /*outline: #00FF00 dotted thick;*/
+}
+#div-b-right-bubblescrolllist {
+ float:left;
+ width: 10%;
+}
+#div-c-dummy-clean {
+ clear:both;
+}
+
+
+
+svg {
+	/* default text*/
+	font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /*Light*/
+  /*font: 10px sans-serif;*/
+}
+
+
+
+
+.graticule {
+  fill: none;
+  stroke: rgb(218,217,199); /*#000;*/
+  stroke-width: 1px;
+}
+
+.graticule.outline {
+  stroke-width: 1px;
+}
+
+
+
+
+
+/*--- LEGEND ---*/
+.legend-caption {
+	font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /*Normal*/
+    /*font-weight: bold;*/
+}
+.key path {
+  display: none;
+}
+.key line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+/* example, the label "1 ATLAS member in every million people"*/
+.key-label {
+	font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /*Normal*/
+    /*font: 8px sans-serif;*/
+}
+/*--- end of LEGEND ---*/
+
+
+
+#map {
+  background-color: #fff;
+  /*border: 1px solid #ccc;*/
+}
+.background {
+  fill: none;
+  pointer-events: all;
+}
+#countries, #states {
+  fill:  rgb(218,217,199); /* it's the light ATLAS brown/grey -- Was: #cee5f3 - it's a lighter version (more white) of the ATLAS blue: #0b80c3 -- Was: #cde */
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+#countries .atlasmember {
+	cursor: pointer;	
+}
+
+/* this is an old class, I think I can remove it, but first check it! */
+#countries .atlas-member {
+	fill: orange;
+}
+
+
+
+#countries .country-active, #states .active {
+  /*fill: #89a;*/
+  stroke: rgb(254,170,80); /* ATLAS orange outline */
+  /*cursor: default;*/
+}
+#countries .country-mouse-over {
+	/*fill: rgb(254,170,80); /* ATLAS orange fill */
+	/*stroke: rgb(254,170,80);*/ /* ATLAS orange outline */
+	opacity: 0.7;
+}
+
+
+
+#insts {
+	stroke-width: 0;
+}
+.institution-circle {
+    fill: red;
+    stroke: #fff;
+	opacity: 0.4;
+}
+.inst_label {
+	fill: #345; /*dark blue color*/
+}
+.institution-dot {
+	fill: rgb(254,170,80); /* ATLAS orange: rgb(254,170,80) - was 'purple'*/
+	/*fill: rgb(211,89,245); /* ATLAS purple */
+	opacity: 1.;
+	/*stroke: #fff; /* white */
+	stroke: rgb(123,123,123); /* ATLAS Dark Grey */;
+	
+}
+
+/*
+transition:{
+        attr:{x:480,y:80},
+        next:{
+          type:"circle",
+          attr:{cx:490,cy:90,r:0},
+          style:{fill:"steelblue",opacity:.5},
+          next:{
+            style:{opacity:0},
+            attr:{r:250},
+            next:{remove:true}
+          }
+        }
+*/
+
+
+
+
+
+.institution-dot.selected {
+  fill: red; /* I tried ATLAS orange, but it's too light */
+  fill-opacity: 1;
+}
+
+
+div.map-country-tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 150px;                  
+  height: 70px;                 
+  padding: 2px;             
+  font-size: 10px;     
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /*Light*/
+  background: #fff;
+  border: 1px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}      
+
+div.sources-tooltip {   
+  position: absolute;           
+  text-align: left;           
+  width: 400px;                  
+  height: 150px;                 
+  padding: 2px;             
+  font-size: 10px;     
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /*Light*/
+  background: #fff;
+  border: 1px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}        
+
+.source-tooltip-title {
+	font-size: 14px;
+    font-weight: 700; /*Bold*/
+}
+.source-tooltip-text {
+	font-size: 12px;
+    font-weight: 300; /*LightItalic*/
+	font-style: italic;
+}
+.source-tooltip-sources {
+	font-size: 12px;
+    font-weight: 400; /*Normal*/
+}
+
+/*
+div.source-label {
+  position: absolute;           
+  text-align: right;           
+  width: 420px;                  
+  height: 20px;                 
+  padding: 2px;   
+  font-size: 11px;     
+  background: #fff;
+  border: 1px;      
+  border-radius: 8px;           
+  pointer-events: none;
+}
+*/
+.info-link {
+	font-size: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; /*Bold*/
+	text-decoration: underline;
+	cursor: pointer; 
+}
+
+.source-text-sources {
+	font-size: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /*Normal*/
+	/*font-family: sans-serif;*/
+}
+.copyright-text {
+	font-size: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /*Normal*/
+}
+
+
+
+
+/*
+div.copyright-label {
+  position: absolute; 
+}
+*/
+
+/*
+div.key-label {
+  position: absolute; 
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+*/
+
+div.institutions-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 44px;
+  margin-left: -20px;
+  margin-top: -44px;
+  /*cursor: pointer;*/
+  z-index: 10;
+  background: url('../images/ATLAS_interactive_collaboration_map_icon_INSTITUTIONS_NEW.png') no-repeat scroll left top transparent;
+  background-color: transparent;
+  background-image: url('../images/ATLAS_interactive_collaboration_map_icon_INSTITUTIONS_NEW.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  /*transform-origin: 50% 100% 200px;
+  transition: transform 240ms cubic-bezier(0.5, 1.35, 0.03, 1.26) 0s;
+  transition-property: transform;
+  transition-duration: 240ms;
+  transition-timing-function: cubic-bezier(0.5, 1.35, 0.03, 1.26);
+  transition-delay: 0s;
+  */
+}
+
+/* NOTE!! this below we don't use anymore: we don't want the active button animating, it must stay still*/
+/* the transition animation to highlight the icon button when mouse hover */
+/*.institutions-button:hover {
+    transition: transform 200ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s;
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.395, 0.425, 0.015, 1);
+        transition-delay: 0s;
+    background-position: left bottom;
+    transform: translateY(-6px);
+    z-index: 20;
+}
+*/
+
+div.institutions-button-greyed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 44px;
+  margin-left: -20px;
+  margin-top: -44px;
+  cursor: pointer;
+  z-index: 10;
+  background: url('../images/ATLAS_interactive_collaboration_map_icon_INSTITUTIONS_greyedout.png') no-repeat scroll left top transparent;
+  background-color: transparent;
+  background-image: url('../images/ATLAS_interactive_collaboration_map_icon_INSTITUTIONS_greyedout.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  /*transform-origin: 50% 100% 200px;
+  transition: transform 240ms cubic-bezier(0.5, 1.35, 0.03, 1.26) 0s;
+  transition-property: transform;
+  transition-duration: 240ms;
+  transition-timing-function: cubic-bezier(0.5, 1.35, 0.03, 1.26);
+  transition-delay: 0s;
+  */
+}
+
+/* the transition animation to highlight the greyed-out icon button when mouse hover */
+.institutions-button-greyed:hover {
+    transition: transform 200ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s;
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.395, 0.425, 0.015, 1);
+        transition-delay: 0s;
+    background-position: left bottom;
+    transform: translateY(-6px);
+    z-index: 20;
+}
+
+
+div.countries-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 44px;
+  margin-left: -20px;
+  margin-top: -44px;
+  /*cursor: pointer;*/
+  z-index: 10;
+  background: url('../images/ATLAS_interactive_collaboration_map_icon_COUNTRIES.png') no-repeat scroll left top transparent;
+  background-color: transparent;
+  background-image: url('../images/ATLAS_interactive_collaboration_map_icon_COUNTRIES.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  /*transform-origin: 50% 100% 200px;
+  transition: transform 240ms cubic-bezier(0.5, 1.35, 0.03, 1.26) 0s;
+  transition-property: transform;
+  transition-duration: 240ms;
+  transition-timing-function: cubic-bezier(0.5, 1.35, 0.03, 1.26);
+  transition-delay: 0s;
+  */
+}
+
+/* NOTE!! this below we don't use anymore: we don't want the active button animating, it must stay still*/
+/* the transition animation to highlight the icon button when mouse hover */
+/*
+.countries-button:hover {
+    transition: transform 200ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s;
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.395, 0.425, 0.015, 1);
+        transition-delay: 0s;
+    background-position: left bottom;
+    transform: translateY(-6px);
+    z-index: 20;
+}
+*/
+
+div.countries-button-greyed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 44px;
+  margin-left: -20px;
+  margin-top: -44px;
+  cursor: pointer;
+  z-index: 10;
+  background: url('../images/ATLAS_interactive_collaboration_map_icon_COUNTRIES_greyedout.png') no-repeat scroll left top transparent;
+  background-color: transparent;
+  background-image: url('../images/ATLAS_interactive_collaboration_map_icon_COUNTRIES_greyedout.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  /*transform-origin: 50% 100% 200px;
+  transition: transform 240ms cubic-bezier(0.5, 1.35, 0.03, 1.26) 0s;
+  transition-property: transform;
+  transition-duration: 240ms;
+  transition-timing-function: cubic-bezier(0.5, 1.35, 0.03, 1.26);
+  transition-delay: 0s;
+  */
+}
+
+/* the transition animation to highlight the icon button when mouse hover */
+.countries-button-greyed:hover {
+    transition: transform 200ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s;
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.395, 0.425, 0.015, 1);
+        transition-delay: 0s;
+    background-position: left bottom;
+    transform: translateY(-6px);
+    z-index: 20;
+}
+
+
+div.scrollingContainer {
+    overflow: auto; /*scroll;*/
+    height: 600px;
+    /*background-color: #eee;*/
+	/*border: 2px solid #555;*/
+}
+
+/* the bubble triggering display of info about a specific institution */
+div.institution-bubble{
+  width: 40px;
+  height: 44px;
+  /*margin-left: -20px;
+  margin-top: -44px;*/
+  cursor: pointer;
+  z-index: 10;
+  /*color: #555;
+  border: 2px solid #555;*/
+  background: url('../images/ATLAS_interactive_collaboration_map_icon_INSTITUTIONS.png') no-repeat scroll left top transparent;
+}
+
+
+.institution-bubble:hover {
+    transition: transform 200ms cubic-bezier(0.395, 0.425, 0.015, 1) 0s;
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.395, 0.425, 0.015, 1);
+        transition-delay: 0s;
+    background-position: left bottom;
+    transform: translateY(-6px);
+    z-index: 20;
+}
+
+/* TODO: TEST for animation IN for inst bubbles */
+.institution-bubble-container {
+	-moz-transition: all 2s ease-out;
+	-webkit-transition: all 2s ease-out;
+	-o-transition: all 2s ease-out;
+	transition: all 2s ease-out;
+	
+	-moz-transform: scale(1) rotate(0deg) ;
+	-webkit-transform: scale(1) rotate(0deg) ;
+	-o-transform: scale(1) rotate(0deg) ;
+	transform:  translate(-250px) ;
+}	
+
+.institution-bubble-container-visible {
+	-moz-transition: all 2s ease-out;
+	-webkit-transition: all 2s ease-out;
+	-o-transition: all 2s ease-out;
+	transition: all 2s ease-out;
+	
+	-moz-transform: scale(1) rotate(0deg) ;
+	-webkit-transform: scale(1) rotate(0deg) ;
+	-o-transform: scale(1) rotate(0deg) ;
+	transform:  translate(0px) ;
+}	
+
+
+
+/* just a placeholder for institutions bubbles */
+div.institution-bubble-test{
+	
+	/*position: relative;
+	display: block;
+	background: url('../images/ATLAS_interactive_collaboration_map_icon_INSTITUTIONS.png') no-repeat scroll left top transparent;*/
+	background: ;
+	display: block;
+	width: 600px;
+	height: 100px;
+	color: #555;
+	background-color: #DDD;
+	border: 2px solid #555;
+	margin-bottom: 5px;
+}
+
+/* colors taken from ColorBrewer.org
+original series: ["#f7fbff","#deebf7","#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5","#08519c","#08306b"] 
+I should change the last item to the new darker ATLAS blue: #0b80c3
+
+.q0-9 { fill:#f7fbff; }
+.q1-9 { fill:#deebf7; }
+.q2-9 { fill:#c6dbef; }
+.q3-9 { fill:#9ecae1; }
+.q4-9 { fill:#6baed6; }
+.q5-9 { fill:#4292c6; }
+.q6-9 { fill:#2171b5; }
+.q7-9 { fill:#08519c; }
+.q8-9 { fill:#08306b; }
+*/
+
+
+
+
+
+
+/*
+.point {
+  fill: #999;
+  stroke: #fff;
+}
+
+
+.point.scanned {
+  fill: orange;
+  fill-opacity: 1;
+  stroke: brown;
+}
+
+.point.selected {
+  fill: red;
+  fill-opacity: 1;
+}
+
+
+.node {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+}
+*/
+
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;	  
+}
+
+
+.bubble-box-old{
+	position: absolute;
+	/*float: left;*/
+	width: 395px;
+	height: 395px;
+	padding: 0px;
+	/*margin: -197.5px 0px 0px -197.5px;*/
+	
+	background: none repeat scroll 0% 0% #000;
+	
+	
+	border-radius: 50%;
+	opacity: 0;
+	
+	
+	
+	/*transition: all 370ms ease 0s; ORIG*/
+	
+	
+	
+	-moz-transition: all 2s ease-out;
+	-webkit-transition: all 2s ease-out;
+	-o-transition: all 2s ease-out;
+	transition: all 2s ease-out;
+	
+
+	/*transform: scale(0) rotate(180deg); ORIG*/
+	
+	/* Firefox */
+	-moz-transform: scale(0) rotate(-180deg) ;
+	/* WebKit */
+	-webkit-transform: scale(0) rotate(-180deg)  ;
+	/* Opera */
+	-o-transform: scale(0) rotate(-180deg)  ;
+	/* Standard */
+	transform: scale(0) rotate(-180deg) ;
+	
+	z-index: 200;
+	text-align: center;
+	color: #FFF;
+	
+	
+	top: 20%;
+	left: 20%;
+			
+}
+
+
+
+.bubble-box{
+	
+	position: absolute;
+	/*float: left;*/
+	
+	/* circle dimensions */
+	width: 395px;
+	height: 395px;
+	padding: 0px;
+	
+	/*margin: -197.5px 0px 0px -197.5px;*/
+	
+	background: none repeat scroll 0% 0% #000;
+	border-radius: 50%;
+	z-index: 200;
+	text-align: center;
+	color: #FFF;
+	
+	/* transitions timing */
+    -moz-transition: all 500ms ease-out;
+	-webkit-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
+	
+	/* initial position - here the bubble starts when opened
+	   set on a spot which looks like starting from the Geneva area
+	*/
+	top: -6%;
+	left: 34%;
+	
+	opacity: 0;
+
+	/* Transition for closing the bubble, when only this class is assigned */    
+	/* Firefox */
+	-moz-transform: scale(0) rotate(-180deg) ;
+	/* WebKit */
+	-webkit-transform: scale(0) rotate(-180deg)  ;
+	/* Opera */
+	-o-transform: scale(0) rotate(-180deg)  ;
+	/* Standard */
+	transform: scale(0) rotate(-180deg) ;
+}
+
+.bubble-box-in {
+	
+	/* transition to show the bubble on the screen, when this class is added to the bubble */
+	-moz-transform: scale(1) rotate(0deg) ;
+	-webkit-transform: scale(1) rotate(0deg) ;
+	-o-transform: scale(1) rotate(0deg) ;
+	transform: scale(1) rotate(0deg) ;
+	
+	/*transform: scale(1) rotate(0deg); ORIG*/
+	
+	/* final position - here the bubble stops when opened */
+	top: 10%;
+	left: 30%;
+	
+	opacity: 1;
+		
+}
+
+
+
+/*
+.bubble-box-in:hover { 
+	-webkit-transform: translate(3em,0); 
+	-moz-transform: translate(3em,0); 
+	-o-transform: translate(3em,0); 
+	-ms-transform: translate(3em,0); 
+	transform: translate(3em,0);
+}
+*/
+
+
+.bubble-box-text{
+	position: relative;
+	font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; /*Bold*/
+	/*font-size: 14px;
+	font-family: ptSansBold,Helvetica,sans-serif;*/
+	text-transform: uppercase;
+	margin-bottom: 4px;
+	margin-left: 10px;
+	margin-right: 10px;
+	top: 30%;
+	
+}
+
+.institution-bubble-name {
+	font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /*Bold*/
+	/*font-size: 12px;
+	font-family: ptSansBold,Helvetica,sans-serif;*/
+}
+
+a {
+    /*color: #0085CE;*/ /*we use the CERN blue for links */
+	color: #0B80C3; /*we use the ATLAS blue for links */
+}
+
+.country-info-name-member {
+	/*font-size: 6px;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800; /*ExtraBold*/
+	/*font-family: ptSansBold,Helvetica,sans-serif;*/
+	color: #0B80C3; /*we use the ATLAS blue for the name of member countries */
+}
+.country-info-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /*SemiBold*/
+	/*font-family: ptSansBold,Helvetica,sans-serif;*/
+	color: gray; /*we use the ATLAS blue for the name of member countries */
+}
+.country-info-member-label {
+	/*font-size: 6px;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; /*SemiBold*/
+	/*font-family: ptSansBold,Helvetica,sans-serif;*/
+	color: #0B80C3; /*we use the ATLAS blue for the name of member countries */
+}
+
+.country-info-members {
+	/*font-size: 6px;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /*Light*/
+	/*font-family: ptSansBold,Helvetica,sans-serif;*/
+	color: #0B80C3; /*we use the ATLAS blue for the name of member countries */
+}
+
+
+.icon--22 {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: bottom;
+	display: inline-block;
+}
+
+.icon--x {
+	margin-top: 15px;
+    background-image: url('../images/icon-x.png');
+	/*padding-right: 25px;*/
+}
+.icon--x:hover {
+    background-image: url('../images/icon-x-hover.png');
+}
+
+

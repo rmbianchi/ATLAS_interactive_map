@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- 
+
+Interactive ATLAS Collaboration world map 
+
+Author:        Riccardo Maria BIANCHI <rbianchi-at-cern.ch>
+First version: 15 Apr 2014
+Update:        02 Oct 2014
+
+v. 6
+
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+	
+	
+	<!-- load all the libraries used here -->
+	
+	<!-- Open Sans family font from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery/jquery-1.11.0.min.js"></script>
+	
+	<!-- D3 -->
+    <script src="js/d3/d3.min.js"></script>
+	<script src="js/d3/d3.geo.projection.v0.min.js"> /* for the less usual geographical projections, like the Eckert IV projection */</script>
+	<script src="js/d3/queue.v1.min.js"></script>
+	<!-- <script src="js/d3/fisheye.js"></script> -->
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+    <!-- <script src="js/topojson/topojson.v1.min.js"></script> -->
+	
+	<!-- Bootstrap -->
+	<!-- <script src="js/bootstrap/bootstrap.min.css"></script> -->
+    <!-- <script src="js/bootstrap/bootstrap.min.js"></script> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> -->
+	
+    
+	
+	<!-- get the ATLAS data from json files -->
+	<!-- <script src="countries.json"></script> -->
+	<script src="data/atlasglance/countries.js"></script>
+	<script src="data/atlasglance/institutes.json"></script>
+	
+	
+	
+	<!-- Main map style file -->
+	<link rel="stylesheet" type="text/css" href="css/map_style.css">
+		
+    
+	
+  </head>
+  <body>
+	 
+	<!-- the main container for the mapo and the bubble list -->
+	<div id="div-maincontainer">
+		<!-- the left container, where the map will be displayed -->
+		<div id="div-a-left-map"> 
+			<!-- The main div where the map will go-->  
+    		<div id="map"></div>
+		</div>
+		<!-- the right container, where the bubble scroll list will be shown -->
+		<div id="div-b-right-bubblescrolllist">
+		</div>
+		<!-- dummy div, only to clear the floats -->
+		<div id="div-c-dummy-clean">
+		</div>
+	</div>
+	
+	
+	
+	<!-- Main mapping script -->
+	<script src="js/map_script.js"></script>
+	
+
+	
+	
+	
+  </body>
+  
+  
+  
+</html>

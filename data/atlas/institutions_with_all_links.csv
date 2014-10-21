@@ -1,0 +1,182 @@
+short-name;name;country;iso3;lat;lon;link;altlink
+Buenos Aires;Universidad de Buenos Aires;Argentina;ARG;-34.9077276;-57.9432517;http://www.df.uba.ar;http://users.df.uba.ar/aia/hepg_exp/exp.html
+La Plata;Universidad National de La Plata (UNLP);Argentina;ARG;-34.9131213;-57.95137;http://www.iflp.unlp.edu.ar;
+Yerevan;Yerevan Physics Institute;Armenia;ARM;40.2067674;44.4857363;http://www.yerphi.am/;http://www.yerphi.am
+Adelaide;University of Adelaide;Australia;AUS;-34.920603;138.6062277;http://www.adelaide.edu.au/directory/p.jackson;http://www.adelaide.edu.au/
+Melbourne;ARC Centre of Excellence in Particle Physics at the Terascale, School of Physics, The University of Melbourne;Australia;AUS;-37.7967123;144.9642724;http://www.coepp.org.au/;
+Sydney;School of Physics, University of Sydney;Australia;AUS;-33.8880341;151.1870924;http://www.physics.usyd.edu.au/hienergy;http://www.physics.usyd.edu.au/hienergy/index.php/Main_Page
+FHWN;Fachhochschule Wiener Neustadt;Austria;AUT;47.8390165;16.2484158;http://www.fhwn.ac.at/;
+Innsbruck;Institut fuer Astro- und Teilchenphysik der Leopold-Franzens-Universitaet Innsbruck;Austria;AUT;47.2647732;11.3428681;http://www.uibk.ac.at/astro/;
+Baku;Institute of Physics, Azerbaijan Academy of Sciences;Azerbaijan;AZE;40.3825387;49.8101488;;
+Brazilian cluster;Brazilian cluster;Brazil;BRA;-22.904632;-43.204345;http://www.usatlas.bnl.gov,  U.S. ATLAS web-site;
+Alberta;University of Alberta;Canada;CAN;53.5234543;-113.5259951;http://cpp.phys.ualberta.ca/cpp/research/atlas.htm;http://www.cpp.ualberta.ca/cpp/research/atlas.htm
+Carleton;Carleton University;Canada;CAN;45.3875812;-75.6960202;http://www.physics.carleton.ca/research/atlas/index.html;http://www.physics.carleton.ca/
+McGill;McGill University, Department of Physics;Canada;CAN;45.5070284;-73.5784503;http://www.physics.mcgill.ca/;http://www.physics.mcgill.ca
+Montreal;Group of Particle Physics, University of Montreal;Canada;CAN;45.5086699;-73.5539925;http://www.lps.umontreal.ca;
+Simon Fraser Burnaby;Simon Fraser University;Canada;CAN;49.2780937;-122.9198833;http://hep.phys.sfu.ca;
+TRIUMF cluster;TRIUMF cluster;Canada;CAN;49.247417;-123.229517;na;http://www.triumf.ca/atlas-group
+Toronto;Department of Physics, University of Toronto;Canada;CAN;43.6607189;-79.3982273;http://hep.physics.utoronto.ca/~atlas;http://www.physics.utoronto.ca/
+Vancouver UBC;Department of Physics, University of British Columbia;Canada;CAN;49.2606052;-123.2459939;http://atlas.phas.ubc.ca;
+Victoria;University of Victoria;Canada;CAN;48.4634067;-123.3116935;http://particle.phys.uvic.ca/atlas/;https://www.uvic.ca/science/physics/vispa/research/projects/atlas
+Chilean cluster;Chilean cluster;Chile;CHL;-33.499243;-70.6157155;http://fisica.uc.cl/;
+Chinese cluster;Chinese cluster;China;CHN;39.9261519;116.2366291;;
+UAN Bogota;Universidad Antonio Narino, Centro de Investigaciones;Colombia;COL;4.5900603;-74.103441;http://www.uan.edu.co;
+Olomouc;Palack\'y University, RCPTM;Czech Republic;CZE;49.593778;17.2508787;http://www.upol.cz;
+Prague AS;Academy of Sciences of the Czech Republic, Institute of Physics and Institute for Computer Science;Czech Republic;CZE;50.0755381;14.4378005;http://www-hep.fzu.cz/Atlas.html;
+Prague CTU;Czech Technical University in Prague, Inst. of Exp. and Applied Physics, Fac. of Nuclear Sciences and Physical Engineering, Fac. of Mechanical Engineering, Fac. of Transportation Sciences;Czech Republic;CZE;50.1016824;14.3906605;;
+Prague CU;Charles University in Prague, Faculty of Mathematics and Physics;Czech Republic;CZE;50.088344;14.403655;http://www-ucjf.troja.mff.cuni.cz/;http://www-ucjf.troja.mff.cuni.cz/new/
+Copenhagen NBI;Niels Bohr Institute (NBI), University of Copenhagen;Denmark;DNK;55.697023;12.5717389;;
+Annecy LAPP;LAPP, Universite de Savoie, CNRS/IN2P3, Annecy-le-Vieux;France;FRA;45.9192139;6.1419499;http://wwwlapp.in2p3.fr;
+Clermont - Ferrand;Laboratoire de Physique Corpusculaire (LPC), Clermont Universite, Universite Blaise Pascal, CNRS/IN2P3, Clermont-Ferrand, France;France;FRA;45.777222;3.087025;http://clrwww.in2p3.fr/atlas;http://atlas-clermont.web.cern.ch/atlas-clermont/
+FR-CCIN2P3 Tier-1;CCIN2P3 Lyon Tier-1;France;FRA;45.771944;4.8901709;na;
+Grenoble LPSC;Laboratoire de Physique Subatomique et de Cosmologie de Grenoble (LPSC);France;FRA;45.188529;5.724524;http://lpsc.in2p3.fr/ATLAS;http://lpsc.in2p3.fr/index.php/en/activites-scientifiques/atlas-ilc/presentation
+LPNHE-Paris;Laboratoire de Physique Nucl\'eaire et de Hautes Energies (LPNHE), UPMC, Universit\'e Paris-Diderot, CNRS/IN2P3;France;FRA;48.856614;2.3522219;;
+Marseille CPPM;Centre de Physique des Particules de Marseille (CPPM), IN2P3-CNRS;France;FRA;43.296482;5.36978;http://marpix1.in2p3.fr/Atlas.html;http://marwww.in2p3.fr
+Orsay LAL;LAL, Universit\'e Paris-Sud, IN2P3/CNRS;France;FRA;48.7013774;2.1798042;http://lalinfo.in2p3.fr/LALHomePage.html;http://atlas.lal.in2p3.fr
+Saclay CEA;Commissariat a l'Energie Atomique (CEA), DSM/IRFU, Centre d'Etudes de Saclay;France;FRA;48.701844;2.134078;;
+Georgian cluster;Georgian cluster;Georgia;GEO;41.7166667;44.7833333;http://hepi.edu.ge;
+Berlin HU;Institute of Physics, Humboldt University, Berlin;Germany;DEU;52.4332248;13.5300876;http://www.eep.physik.hu-berlin.de;http://www-eep.physik.hu-berlin.de/
+Bonn;University of Bonn;Germany;DEU;50.72747;7.08831;http://hep1.physik.uni-bonn.de;
+DE-KIT Tier-1;GridKA Tier-1 Karlsruhe;Germany;DEU;49.0963095;8.4004516;na;
+DESY;DESY, Hamburg and Zeuthen;Germany;DEU;52.3476518;13.6207615;http://www-atlas.desy.de;http://atlas.desy.de/
+Dortmund;Institut fuer Physik, TU Dortmund;Germany;DEU;51.5135872;7.4652981;http://e4.physik.uni-dortmund.de/;
+Dresden;Institut fuer Kern- und Teilchenphysik, Technische Universitaet Dresden;Germany;DEU;51.0504088;13.7372621;http://iktp.tu-dresden.de;
+Freiburg;Albert-Ludwigs-Universitaet Freiburg, Fakultaet fuer Mathematik und Physik;Germany;DEU;47.9990077;7.8421043;http://wwwhep.physik.uni-freiburg.de;
+Giessen;II Physikalisches Institut, Justus-Liebig-Universitaet Giessen;Germany;DEU;50.57368;8.700465;http://www.physik.uni-giessen.de/atlas;http://www.uni-giessen.de/cms/fbz/fb07/fachgebiete/physik/einrichtungen/2pi/ag/ag-dueren
+Goettingen;Georg-August-Universitat Goettingen, II. Physikalisches Institut;Germany;DEU;51.5398596;9.9359273;http://physik2.uni-goettingen.de/;http://physik2.uni-goettingen.de
+Heidelberg;Ruprecht-Karls-Universitaet Heidelberg;Germany;DEU;49.41936;8.670254;na;http:/kip.uni-heidelberg.de/atlas/
+Mainz;Institut fuer Physik, Universitaet Mainz;Germany;DEU;49.99056;8.235;http://www.etap.physik.uni-mainz.de;
+Munich LMU;Fakultaet  fuer Physik, Ludwig-Maximilians-Universitaet Muenchen;Germany;DEU;48.1351253;11.5819806;http://www.etp.physik.uni-muenchen.de/;http://www.etp.physik.uni-muenchen.de/index.html
+Munich MPI;Max-Planck-Institut fuer Physik;Germany;DEU;48.1351253;11.5819806;http://www.mpp.mpg.de/forschung/experimental/atlas/index.html;
+Siegen;Fachbereich Physik, Universitaet Siegen;Germany;DEU;50.8838492;8.0209591;http://www.hep.physik.uni-siegen.de;http://www.hep.physik.uni-siegen.de/?lang=en
+Wuerzburg;Julius-Maximilians-University of W\"urzburg;Germany;DEU;49.7826011;9.9722707;http://www.pid.physik.uni-wuerzburg.de;
+Wuppertal;Bergische Universitaet (Wuppertal), Fachbereich Mathematik und Naturwissenschaften;Germany;DEU;51.245;7.1495;http://www.physik.uni-wuppertal.de/Forschung/Teilchenphysik/ExpTeilchenphysik/;
+Athens;University of Athens;Greece;GRC;37.9684695;23.7833561;http://nuclpart.phys.uoa.gr/EN/index.en.php;
+Athens NTU;National Technical University of Athens;Greece;GRC;37.9783769;23.7827066;http://www.physics.ntua.gr;http://www.physics.ntua.gr/hep
+Thessaloniki;Aristotle University of Thessaloniki;Greece;GRC;40.6400629;22.9444191;http://skiathos.physics.auth.gr/atlas;
+Technion Haifa;Department of Physics, Technion;Israel;ISR;32.7767783;35.0231271;;
+Tel-Aviv;School of Physics, Tel-Aviv University;Israel;ISR;32.0852999;34.7817676;http://atlas2.tau.ac.il;http://physics.tau.ac.il/
+Weizmann Rehovot;Department of Particle Physics, The Weizmann Institute of Science;Israel;ISR;31.9083649;34.813595;http://www.weizmann.ac.il/~fhatlas/;
+Bologna;INFN Bologna and Universita' di Bologna, Dipartimento di Fisica e Astronomia;Italy;ITA;44.4962318;11.354157;http://www.bo.infn.it/;http://www.bo.infn.it
+Cosenza;INFN Gruppo Collegato di Cosenza and Universita' della Calabria, Dipartimento di Fisica;Italy;ITA;39.3604685;16.2264311;http://www.cs.infn.it;
+Frascati;INFN Laboratori Nazionali di Frascati;Italy;ITA;41.823237;12.673043;;
+Genova;INFN Genova and Universita' di Genova, Dipartimento di Fisica;Italy;ITA;44.4026678;8.9715385;http://www.ge.infn.it/ATLAS/home.html;
+Lecce;INFN Lecce and Universita' del Salento, Dipartimento di Matematica e Fisica;Italy;ITA;40.3360544;18.1113937;http://web.me.com/egorini/ATLAS_Lecce/Home.html;http://www.le.infn.it
+Milano;INFN Milano and Universita' di Milano, Dipartimento di Fisica;Italy;ITA;45.5133026;9.2103412;http:/atlas.mi.infn.it/;http://atlas.mi.infn.it
+Napoli;INFN Napoli and Universita' di Napoli, Dipartimento di Fisica, Napoli;Italy;ITA;40.8387071;14.1846927;;
+Pavia;INFN Pavia and Universita' di Pavia, Dipartimento di Fisica;Italy;ITA;45.1973739;9.1428311;;
+Pisa;INFN Pisa and Universita' di Pisa, Dipartimento di Fisica;Italy;ITA;43.7167235;10.3988593;;
+Roma I;INFN Roma and Sapienza Universita' di Roma, Dipartimento di Fisica;Italy;ITA;41.9019999;12.5140718;http://roma1.infn.it;http://www.roma1.infn.it/exp/atlas/
+Roma II;INFN Roma Tor Vergata and Universita' di Roma Tor Vergata, Dipartimento di Fisica;Italy;ITA;41.8543926;12.6038126;http://www.roma2.infn.it;
+Roma Tre;INFN Roma Tre and  Universita' Roma Tre, Dipartimento di Fisica;Italy;ITA;41.8542378;12.4640965;http://www.roma3.infn.it/atlas/;http://www.roma3.infn.it/
+Udine;INFN  Gruppo Collegato di Udine and Universita' di Udine, Dipartimento di Fisica -  INFN Gruppo Collegato di Udine and ICTP, Trieste;Italy;ITA;45.6495264;13.7768182;http://www.fisica.uniud.it;
+Hiroshima IT;Hiroshima Institute of Technology;Japan;JPN;34.3852029;132.4552927;http://www.it-hiroshima.ac.jp/english/;
+KEK;KEK, High Energy Accelerator Research Organization;Japan;JPN;36.0834857;140.0766423;http://atlas.kek.jp;http://www.kek.jp/en/
+Kobe;Kobe University;Japan;JPN;34.690083;135.1955112;http://www.phys.sci.kobe-u.ac.jp;http://ppwww.phys.sci.kobe-u.ac.jp/2013/english/index.html
+Kyoto;Kyoto University, Department of Physics;Japan;JPN;35.0116363;135.7680294;http://www.scphys.kyoto-u.ac.jp/index_e.html;
+Kyoto UE;Kyoto University of Education;Japan;JPN;34.9502174;135.773184;http://kkuatx.hep.kyokyo-u.ac.jp/~ryuichi;
+Kyushu;Kyushu University;Japan;JPN;33.5903547;130.4017155;http://www.kyushu-u.ac.jp/english/index.php;
+Nagasaki;Nagasaki Institute of Applied Science;Japan;JPN;32.754106;129.942209;http://www.nias.ac.jp/;
+Nagoya;Graduate School of Science and Kobayashi-Maskawa Institute, Nagoya University;Japan;JPN;35.1814464;136.906398;http://www.hepl.phys.nagoya-u.ac.jp/;http://en.nagoya-u.ac.jp/
+Okayama;Faculty of Science, Okayama University;Japan;JPN;34.6551456;133.9195019;http://fphy.hep.okayama-u.ac.jp/index.html;
+Osaka;Osaka University;Japan;JPN;34.6937378;135.5021651;http://www.phys.sci.osaka-u.ac.jp/index-en.html;
+Shinshu;Faculty of Science, Shinshu University;Japan;JPN;36.6485496;138.1942432;http://hepl.shinshu-u.ac.jp/index.php?HE%20Lab%20Top%20Page;
+Tokyo ICEPP;International Center for Elementary Particle Physics and Department of Physics, The University of Tokyo;Japan;JPN;35.7126775;139.761989;http://www.icepp.s.u-tokyo.ac.jp;
+Tokyo MU;Graduate School of Science and Technology, Tokyo Metropolitan UniversityMetropolitan University;Japan;JPN;35.6894875;139.6917064;http://www.se.tmu.ac.jp/index-e.html;
+Tokyo Tech;Tokyo Institute of Technology;Japan;JPN;35.6894875;139.6917064;http://www.phys.titech.ac.jp/english/research/research.html;
+Tsukuba;Faculty of Pure and  Applied Sciences, University of Tsukuba;Japan;JPN;36.2112081;140.0989668;http://hep-www.px.tsukuba.ac.jp;http://www.px.tsukuba.ac.jp/senkou/en/
+Waseda;Waseda University, Waseda Research Institute for Science and engineering (WISE);Japan;JPN;35.7101093;139.7216719;;
+RUPHE Morocco;Reseau Universitaire de Physique des Hautes Energies, Maroc;Morocco;MAR;33.9740846;-6.8458204;-;http://www.fsr.ac.ma
+Nijmegen;Radboud University Nijmegen and NIKHEF;Netherlands;NLD;51.8125626;5.8372264;http://www.ru.nl/ehef/;
+Nikhef;FOM - Institute SAF Nikhef and University of Amsterdam/Nikhef;Netherlands;NLD;52.3702157;4.8951679;http://www.nikhef.nl/;http://www.nikhef.nl/en/
+Bergen;University of Bergen;Norway;NOR;60.3912628;5.3220544;http://www.ift.uib.no/partikkelfysikk/;
+Oslo;University of Oslo;Norway;NOR;59.9399586;10.7217496;http://www.fys.uio.no/;
+Cracow AGH/UJ cluster;Cracow AGH/UJ;Poland;POL;50.0646501;19.9449799;na;http://www.ftj.agh.edu.pl
+Cracow IFJ PAN;Institute of Nuclear Physics (IFJ PAN), Polish Academy of Sciences;Poland;POL;50.0646501;19.9449799;http://www.ifj.edu.pl;http://www.ifj.edu.pl/dept/no1.php?lang=en
+Portugal cluster;Portugal cluster;Portugal;PRT;40.208911;-8.423695;http://www.lip.pt/atlas/;
+Minsk AC;Institute of Physics, National Academy of Sciences;Republic of Belarus;BLR;53.9;27.5666667;http://ifanbel.bas-net.by/;
+Minsk NC;National Centre for Particle and High Energy Physics;Republic of Belarus;BLR;53.9;27.5666667;http://www.hep.by;
+Bucharest cluster;Bucharest cluster;Romania;ROU;44.4358023;26.0470819;na;http://www.nipne.ro/
+JINR Dubna;Joint Institute for Nuclear Research;Russia;RUS;56.7320202;37.1668974;http://www.jinr.ru/;
+Moscow FIAN;P.N. Lebedev Institute of Physics;Russia;RUS;55.755826;37.6173;;
+Moscow ITEP;Institute for Theoretical and Experimental Physics;Russia;RUS;55.755826;37.6173;http://www.itep.ru/eng/;
+Moscow MEPhI;Moscow Engineering and Physics Institute (MEPhI);Russia;RUS;55.6499045;37.6644802;http://pc3k40.exp.mephi.ru;http://particle.mephi.ru/en/
+Moscow SU;M.V.Lomonosov Moscow State University;Russia;RUS;55.755826;37.6173;http://www-hep.sinp.msu.ru/hep/atlas;http://sinp.msu.ru/en
+Novosibirsk BINP;Budker Institute of Nuclear Physics, Siberian Branch of Russian Academy of Sciences;Russia;RUS;55.0083526;82.9357327;http://www.inp.nsk.su;http://www.inp.nsk.su/index.en.shtml
+Petersburg NPI;Petersburg Nuclear Physics Institute;Russia;RUS;59.5624627;30.1064659;http://hepd.pnpi.spb.ru/hepd/index.html;http://www.pnpi.spb.ru/
+Protvino IHEP;State Research Center Institute for High Energy Physics (IHEP);Russia;RUS;54.8833333;37.2166667;http://www.ihep.su;
+Belgrade cluster;Belgrade cluster;Serbia;SRB;44.8205556;20.4622222;na;http://atlas.ipb.ac.rs
+Slovakian cluster;Slovakian cluster;Slovak Republic;SVK;48.1458923;17.1071373;-;http://uef.saske.sk/en
+Ljubljana;Jozef Stefan Institute and University of Ljubljana, Department of Physics;Slovenia;SVN;46.0569465;14.5057515;http://www-f9.ijs.si;http://www.ijs.si
+South Africa cluster;South Africa cluster;South Africa;ZAF;-33.924673;18.423287;http://hep.wits.ac.za/homepage.php;
+Barcelona;Institut de Fisica d'Altes Energies, Universitat Autonoma de Barcelona;Spain;ESP;41.3850639;2.1734035;;
+ES-PIC;Barcelona Tier-1;Spain;ESP;41.5013889;2.0911111;http://www.pic.es;http://www.ifae.es
+Madrid UA;Physics Department, Universidad Autonoma de Madrid;Spain;ESP;40.5495215;-3.6876052;http://hepexp.ft.uam.es;
+Valencia;Instituto de F\'isica Corpuscular (IFIC), Centro Mixto Universidad de Valencia - CSIC;Spain;ESP;39.4699075;-0.3762881;http://webific.ific.uv.es/web/;
+Lund;Lunds universitet, Fysiska institutionen;Sweden;SWE;55.7102679;13.204838;http://www.hep.lu.se;
+Stockholm;Stockholm University;Sweden;SWE;59.3293235;18.0685808;http://bub.physto.se/english/;
+Stockholm KTH;Royal Institute of Technology (KTH);Sweden;SWE;59.3293235;18.0685808;;
+Uppsala;Uppsala University, Department of Physics and Astronomy;Sweden;SWE;59.8585638;17.6389267;http://www4.tsl.uu.se/~Atlas/index.html;
+Bern;University of Bern, Albert Einstein Center for Fundamental Physics, Laboratory for High Energy Physics;Switzerland;CHE;46.9504896;7.438119;http://www.lhep.unibe.ch/;http://www.lhep.unibe.ch
+CERN;European Laboratory for Particle Physics, CERN;Switzerland;CHE;46.2329908;6.0552787;http://www.cern.ch http://www.atlas.ch;
+Geneva;Section de Physique, Universite de Geneve;Switzerland;CHE;46.1969358;6.1346304;http://dpnc.unige.ch;
+TW-ASGC Tier-1;Taiwan Tier-1;Taiwan;TWN;25.091075;121.5598345;na;
+Taipei AS;Academia Sinica, Taipei;Taiwan;TWN;25.091075;121.5598345;http://www-hep.phys.sinica.eu.tw/~atlas;http://www-hep.phys.sinica.edu.tw/
+Ankara University;Ankara University;Turkey;TUR;39.935045;32.833803;na;http://en.ankara.edu.tr/
+Bogazici University;Bogazici University, Physics department;Turkey;TUR;41.0763264;29.0444613;http://atlas.gantep.edu.tr/tr/bogazici.php;
+Birmingham;University of Birmingham;United Kingdom;GBR;52.4498552;-1.9287282;http://www.ep.ph.bham.ac.uk/;
+Cambridge;Cavendish Laboratory, University of Cambridge;United Kingdom;GBR;52.2097076;0.090826;http://www.hep.phy.cam.ac.uk;http://www.hep.phy.cam.ac.uk/atlas/
+Edinburgh;University of Edinburgh;United Kingdom;GBR;55.953252;-3.188267;http://www.ph.ed.ac.uk/particle-physics-experiment;http://www.ph.ed.ac.uk/ppe
+Glasgow;University of Glasgow, SUPA - School of Physics and Astronomy;United Kingdom;GBR;55.8721211;-4.2882005;http://www.physics.gla.ac.uk/Welcome.html/;http://www.glasgow.ac.uk/particlephysics/
+Lancaster;Lancaster University, Department of Physics;United Kingdom;GBR;54.0103942;-2.7877294;http://www.hep.lancs.ac.uk;
+Liverpool;University of Liverpool;United Kingdom;GBR;53.4034427;-2.9635745;http://hep.ph.liv.ac.uk;
+London QMUL;Queen Mary University of London;United Kingdom;GBR;51.5240671;-0.0403745;http://pprc.qmul.ac.uk;http://pprc.qmul.ac.uk/
+London RHBNC;Department of Physics, Royal Holloway and Bedford New College;United Kingdom;GBR;51.425673;-0.5630625;http://www.rhul.ac.uk/physics;https://www.royalholloway.ac.uk/physics/research/particlephysics/centreforparticlephysics.aspx
+London UC;Department of Physics and Astronomy, University College London;United Kingdom;GBR;51.5073509;-0.1277583;http://www.hep.ucl.ac.uk;
+Manchester;School of Physics and Astronomy, University of Manchester;United Kingdom;GBR;53.479324;-2.2484851;http://www.hep.man.ac.uk;
+Oxford;Department of Physics, Oxford University;United Kingdom;GBR;51.7598294;-1.2595874;http://www-pnp.physics.ox.ac.uk/~atlas/index.html;http://www2.physics.ox.ac.uk/research/atlas
+RAL;Rutherford Appleton Laboratory;United Kingdom;GBR;51.608044;-1.24484;;
+Sheffield;Department of Physics and Astronomy, University of Sheffield;United Kingdom;GBR;53.381129;-1.470085;http://www.hep.shef.ac.uk/research/atlas/;https://www.sheffield.ac.uk/physics
+Sussex;University of Sussex;United Kingdom;GBR;50.82253;-0.137163;http://www.sussex.ac.uk/physics/;
+Warwick;University of Warwick, Coventry;United Kingdom;GBR;52.3792525;-1.5614704;http://www2.warwick.ac.uk/;
+Albany;University at Albany, SUNY;United States of America;USA;42.686744;-73.822852;http://www.albany.edu/physics;http://atlas.atlas.albany.edu/
+Argonne;Argonne National Laboratory;United States of America;USA;40.6331249;-89.3985283;http://atlaswww.hep.anl.gov/group/;http://www.anl.gov/
+Arizona;University of Arizona;United States of America;USA;32.2298339;-110.9539866;http://hep.physics.arizona.edu;http://atlas.physics.arizona.edu
+Arlington UT;The University of Texas at Arlington;United States of America;USA;32.7304682;-97.1147739;http://www.uta.edu/physics/;
+Berkeley LBNL;Lawrence Berkeley National Laboratory and University of California, Berkeley;United States of America;USA;37.8739132;-122.2505629;http://www.-atlas.lbl.gov;
+Boston;Boston University, Department of Physics;United States of America;USA;42.348381;-71.1003358;http://physics.bu.edu/sites/atlas/;http://physics.bu.edu/
+Brandeis;Brandeis University, Department of Physics;United States of America;USA;42.3654347;-71.258595;http://www.hep.brandeis.edu/atlas;
+Brookhaven BNL;Brookhaven National Laboratory (BNL);United States of America;USA;40.869543;-72.8867697;http://www.usatlas.bnl.gov/;
+Chicago;University of Chicago, Enrico Fermi Institute;United States of America;USA;41.8791435;-87.6312767;http://hep.uchicago.edu/;http://physics.uchicago.edu
+Columbia;Nevis Laboratory, Columbia University;United States of America;USA;41.0273124;-73.8722527;;
+Dallas SMU;Southern Methodist University, Department of Physics;United States of America;USA;32.8462051;-96.7837943;http://www.physics.smu.edu/;
+Dallas UT;University of Texas at Dallas;United States of America;USA;32.9843468;-96.7459305;http://www.utdallas.edu/physics/;http://www.utdallas.edu/physics/high-energy-physics/
+Duke;Duke University, Department of Physics;United States of America;USA;36.0033045;-78.9424754;http://atlas.phy.duke.edu;
+Hampton;Hampton University, Department of Physics;United States of America;USA;37.0216015;-76.3362312;http://cosm.hamptonu.edu;
+Harvard;Harvard University, Department of Physics;United States of America;USA;42.3770029;-71.1166601;lppc.physics.harvard.edu;http://www.physics.harvard.edu
+Indiana;Indiana University;United States of America;USA;39.1647856;-86.5248858;http://physics.indiana.edu/;http://www.iub.edu/~iubphys/
+Iowa;University of Iowa;United States of America;USA;41.6626963;-91.5548998;http://www.physics.uiowa.edu;
+Iowa State;Iowa State University;United States of America;USA;42.0297047;-93.6476086;;
+Louisiana Tech;Louisiana Tech University;United States of America;USA;32.5283255;-92.6499581;http://www.phys.latech.edu/;
+MIT;Massachusetts Institute of Technology, Department of Physics;United States of America;USA;42.3598386;-71.0934089;http://web.mit.edu/lns/;
+Massachusetts;University of Massachusetts, Amherst;United States of America;USA;42.3938325;-72.5276064;http://people.umass.edu/eppex/atlas;http://www.physics.umass.edu/
+Michigan;University of Michigan, Department of Physics;United States of America;USA;42.276699;-83.7365302;;
+Michigan SU;Michigan State University, Department of Physics and Astronomy;United States of America;USA;42.7041949;-84.4791506;http://www.pa.msu.edu/hep/atlas;http://msu.edu/
+NYU New York;Department of Physics, New York University;United States of America;USA;40.8496448;-73.9291757;http://physics.nyu.edu/~am3/HEPexp.html;
+New Mexico;Department of Physics and Astronomy, University of New Mexico;United States of America;USA;35.0843441;-106.6197553;http://panda.unm.edu;http://physics.unm.edu/NUPAC_NMCPP/atlas_pixel/
+Northern Illinois;Northern Illinois University;United States of America;USA;41.934299;-88.773718;http://nicadd.niu.edu;http://www.niu.edu
+Ohio SU;Ohio State University;United States of America;USA;40.0138423;-83.0310846;http://www.physics.ohio-state.edu/~atlas;http://www.physics.ohio-state.edu/~atlas/
+Oklahoma;Homer L. Dodge Department of Physics and Astronomy, University of Oklahoma;United States of America;USA;35.2058936;-97.4457137;http://www-hep.nhn.ou.edu/;http://www.nhn.ou.edu
+Oklahoma SU;Oklahoma State University;United States of America;USA;36.1240015;-97.071923;http://physics.okstate.edu;
+Oregon;University of Oregon;United States of America;USA;44.0448302;-123.0726055;http://uoregon.edu/~chep;
+Pennsylvania;Department of Physics, University of Pennsylvania;United States of America;USA;39.9546084;-75.1877159;;
+Pittsburgh;University of Pittsburgh;United States of America;USA;40.4446174;-79.9583693;;
+SLAC;SLAC National Accelerator Laboratory;United States of America;USA;37.4185193;-122.2055072;http://www.slac.stanford.edu/exp/atlas;
+Santa Cruz UC;Institute for Particle Physics, University of California;United States of America;USA;36.9913856;-122.0608718;http://scipp.ucsc.edu/;
+Seattle Washington;Department of Physics, University of Washington, Seattle;United States of America;USA;47.653638;-122.3112787;http://www.washington.edu;
+Stony Brook;Stony Brook University;United States of America;USA;40.9130959;-73.1235863;http://sbhep1.physics.sunysb.edu/;
+Tufts;Tufts University;United States of America;USA;42.4057698;-71.1170465;https://wikis.uit.tufts.edu/confluence/display/physics/Home;
+UC Irvine;University of California, Irvine;United States of America;USA;33.6440102;-117.8434165;http://www.uci.edu;
+UI Urbana;University of Illinois at Urbana-Champaign;United States of America;USA;40.1109073;-88.2232328;;
+Wisconsin;Department of Physics, University of Wisconsin;United States of America;USA;43.0738705;-89.4050577;;
+Yale;Yale University;United States of America;USA;41.3126451;-72.9251244;http://hepwww.physics.yale.edu;http://hep.yale.edu/welcome-yale-atlas-group
